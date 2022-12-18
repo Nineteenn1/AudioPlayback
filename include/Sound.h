@@ -1,6 +1,3 @@
-#define MINIAUDIO_IMPLEMENTATION
-#include "../external/miniaudio/miniaudio.h"
-
 #include <iostream>
 
 namespace Homemade
@@ -8,12 +5,9 @@ namespace Homemade
 	class Sound
 	{
 	public:
-		void Play(const char* path);
+		static void Play(const char* path);
 		
-		int Init();
-		void Uninit();
-	private:
-		ma_result result;
-		ma_engine engine;
+		static int Init();
+		static void Uninit();
 	};
 }
