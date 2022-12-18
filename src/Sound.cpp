@@ -12,8 +12,6 @@ namespace Homemade
 	void Sound::Play(const char* path)
 	{
 		ma_engine_play_sound(&engine, path, NULL);
-
-		getchar();
 	}
 
 	int Sound::Init()
